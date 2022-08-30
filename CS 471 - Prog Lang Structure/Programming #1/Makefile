@@ -9,6 +9,10 @@ make: aliasing.c
 run: aliasing
 	./aliasing
 
+#Debugging Code
+edit: aliasing.c
+	vim aliasing.c
+	
 # Clean Folder up
 clean: 
 	rm aliasing
