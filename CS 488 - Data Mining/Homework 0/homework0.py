@@ -1,5 +1,6 @@
 #Import Libray
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #Load CSV file
 df = pd.read_csv('titanic_train.csv')
@@ -23,8 +24,14 @@ print("\nNumber of rows with a Survived value of 1:\n",df['Survived'].value_coun
 print("\nNumber of rows that is not missing values:\n",df['Age'].notnull().sum())
 
 #Calculate the average value of the 6th column
-print("\nAverage Value of the Age Column:\n",df['Age'].sum()/df['Age'].notnull().sum())
+agedf = df['Age'].dropna()
+print("\nAverage Value of the Age Column:\n",agedf.sum()/len(agedf))
 
 #Calculate the average value of the 6th column when the 2nd column has value 1.
-print(df[['Survived','Age'].value_counts()[1]])
+survdf = df[df.Survived == 1].dropna()
+print("\nAverage Value of the Age Column with the Value 1 in the Survived Column\n",survdf['Age'].sum()/len(survdf))
+
+#Draw a scatter plot with the data of the 6th column (“Age” column) and the 10th column(“Fare” column).
+df.plot()
+plt.show()
 
