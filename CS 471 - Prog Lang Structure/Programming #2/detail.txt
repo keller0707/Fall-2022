@@ -1,0 +1,50 @@
+In this project you will test several languages to see if the language implementation has short circuit evaluation in the AND Boolean construct. Short circuit evaluation is when the language evaluates the first portion of a BOOLEAN expression and if, knowing the result of the value, then skips the evaluation of second expression.  For example  A & B is false if A is false... no need to evaluate B.  A similar scenario is true for OR.  Most languages implement short circuit evaluation
+
+
+Deliverable:
+One document, with your name, problem description,  a summary of the results in tabular form of your experiments, the 4 programs (with proper documentation on each program) you ran with the output attached
+
+ 
+
+You are to create a program for the following languages
+
+ADA
+C-SHELL (borne or Kshell are fine)
+PHP
+PERL
+
+Which demonstrates whether the language fully evaluates a BOOLEAN expression. 
+
+ 
+
+To run ADA on the Computer Science domain you need to do the following steps
+
+gcc -c myfile.adb
+
+gnatmake --GNATBIND=gnatbind --GNATLINK=gnatlink myfile
+
+./myfile
+
+ 
+
+An example could look like:
+
+function f()
+
+  {  write('I have been evaluated');
+      return(1);
+
+  }
+
+ 
+
+main()
+{   int i=1;
+
+ 
+
+if ( i ==0 && f() )
+  then  write ('true')
+  else   write ('false)
+
+}
