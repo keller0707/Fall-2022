@@ -1,8 +1,10 @@
 #Run all commands
-all: allCShell allADA runPHP runPerl
+all: allADA allCShell allPHP allPerl
+
+##########################################################
 
 #
-#C Shell
+# C Shell
 #
 
 #Run all C Shell Commands
@@ -19,7 +21,7 @@ runCShell: shortcircuit.csh
 ############################################################
 
 #
-#ADA
+# ADA
 #
 
 #Run all ADA Commands
@@ -39,8 +41,11 @@ runADA:
 #############################################################
 
 #
-#PHP
+# PHP
 #
+
+#Run all PHP Commands
+allPHP: runPHP
 
 #Running PHP
 runPHP: shortcircuit.php
@@ -49,8 +54,11 @@ runPHP: shortcircuit.php
 #############################################################
 
 #
-#Perl
+# Perl
 #
+
+#Run all Perl Commands
+allPerl: runPerl
 
 #Running Perl
 runPerl: shortcircuit.pl
@@ -59,18 +67,18 @@ runPerl: shortcircuit.pl
 #############################################################
 
 #
-#Clean
+# Clean
 #
 
 #Clean all
-clean: cleanCShell cleanADA
-
-#Clean C Shell
-cleanCShell: shortcircuit.csh
-	chmod -x shortcircuit.csh
+clean: cleanADA cleanCShell
 
 #Clean ADA
 cleanADA:
 	rm shortcircuit
 	rm -v *.ali
 	rm -v *.o
+
+#Clean C Shell
+cleanCShell: shortcircuit.csh
+	chmod -x shortcircuit.csh
