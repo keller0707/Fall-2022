@@ -1,0 +1,40 @@
+Team Members:
+
+Shafiq Zaman
+Keller Sedillo
+Seth Ball
+
+Stage 2:
+
+    Seth:
+        Created Google Doc for Report
+        Wrote about Modivation & Problem Definition
+
+    Zaman:
+        Wrote about possible data mining tasks
+
+    Keller:
+        Updated team.txt
+        Wrote about related works
+
+Stage 3:
+   Seth:
+	Collect Large Data Set
+	Analyze Data Set
+	Create Github to store and share program	
+   Zaman:
+	Updated the Description
+	Analyze Data Set
+	Create New Data Set For program 
+   Keller:
+	Update team.txt
+	Proof read and updated report.
+
+Stage 4: 
+   Seth:
+	Updated program
+	Updated Report
+   Zaman: 
+	Updated program
+   Keller:
+	Proof Read and updated report.

@@ -1,0 +1,63 @@
+Notes for csv files:
+
+School:
+	GP-Gabriel Pereira
+	MS-Mousinho da Silveira
+
+Address:
+	U-Urban
+	R-Rural
+
+Pstatus:
+	T-living together
+	A-apart
+
+Fedu=fathers education:
+Medu-mothers education:
+	1-4 grade
+	2-5-9 grade	
+	3-secondary
+	4-higher education
+
+Travel Time:
+	1-<15min
+	2-15-30min
+	3-30-60min
+	4->1hour
+
+study time:
+	1-<2hours
+	2-2-5hours
+	3-5-10hours
+	4->10hours
+
+failures:
+	at face value unless 4
+	if failures are more than 4
+	then value will just be 4
+
+famrel-family relationship:
+	1-very bad
+	5-very good
+
+freetime:
+goout:
+Dalc- workday alchohol consumption:
+Walc- weekend alchohol consupmtion:
+health:
+	1-very low
+	5-very high
+
+absences:
+	0-93
+
+G1:
+	first period grade 0-20
+G2:
+	second period grade 0-20
+G3(output target):
+	final grade:0-20 
+	
+
+
+

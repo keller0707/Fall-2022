@@ -1,0 +1,17 @@
+Chapter 14 discusses exception handling.  Although it will be some time before we approach the topic, the concepts are straight forward.  I am posting this assignment early so you can make efforts towards it.
+
+ 
+
+You are to rewrite the grade distribution ADA program as attached hereDownload here in JAVA 
+
+Your task , in your JAVA version, is to change the second half of the first  loop so that all assignments to the counting Array "Freq()" are updated in the Exception portion of the code.  There should be no valid updates to "Freq()" anywhere else in the loop.
+
+ 
+
+Deliverables
+
+1)  Your name and problem description
+
+2)  A copy of your new code
+
+3)  A test run of your code to show that it is working. 

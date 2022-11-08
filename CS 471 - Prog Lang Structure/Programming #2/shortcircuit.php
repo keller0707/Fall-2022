@@ -10,19 +10,19 @@
 // PostCondition : Will print either
 // 		   True or False.
 
-//Create Function
+// Create Function
 function func1(){
-	echo "I have been evaluated\n"; //Print evaluation
-	return 1;                       //Return True
-}
+	echo "I have been evaluated\n"; // Print evaluation
+	return 1;                       // Return True
+}                                   // End func1
 
-//Set i
+// Set i
 $i = 1;
 
-//Check values
-if($i == 0 && func1()){
-	echo "True\n";
-} else {
-	echo "False\n";
-}//End ifElse
+// Check values
+if($i == 0 && func1()){ // Check Values
+	echo "True\n";      // Print True
+} else {                // Else
+	echo "False\n";     // Print False
+}                       // End ifElse
 ?> 

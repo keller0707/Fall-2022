@@ -1,18 +1,29 @@
+#
+# Name        : Keller Sedillo-Garrido
+# Date        : September 28, 2022
+# Description : This program will perform Gaussian Elimination and Backward Subitution
+#             : with a NxN+1 Matrix
+# Input       : The size of the matrix
+# Output      : A solved matrix with solutions.
+#
+
+#Libary
 import numpy as np
 from scipy.linalg import lu
 from scipy.linalg import solve_triangular
 import random
 import sys
 
-#print("Input size of Matrix:")
-N = int(sys.argv[1])
-A = np.random.randint(10, size=(N, N))
-b = np.random.randint(10, size=(N, 1))
-x = np.zeros(N)
+#Set vars
+N = int(sys.argv[1])                   # Get Matrix Size from user
+A = np.random.randint(10, size=(N, N)) # Create NxN Matrix
+b = np.random.randint(10, size=(N, 1)) # Create Nx1 Matrix 
+x = np.zeros(N)                        # Create array to hold solutions
 
 #Use LU sub.
 p, l, u = lu(np.concatenate((A,b),axis=1))
 
+#Split Solition
 A = u[:, :-1] #All but last Col
 b = u[:, -1]  #Just last Col
 

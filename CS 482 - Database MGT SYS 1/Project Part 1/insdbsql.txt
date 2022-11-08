@@ -1,0 +1,72 @@
+ insert into Video values(12, 45);
+ insert into Video values(45, 87);
+ insert into Video values(65, 89);
+
+
+ insert into Model values('abc', 1234.56, 2345.67, 3456.78, 4567.89, 5678.90);
+ insert into Model values('bcd', 1234.56, 2345.67, 3456.78, 4567.89, 5678.90);
+ insert into Model values('cde', 1234.56, 2345.67, 3456.78, 4567.89, 5678.90);
+
+
+ insert into Site values(34, 'bar','100 Air Park' ,'09457654321');
+ insert into Site values(89, 'bar','109 Air Park' ,'09876654321');
+ insert into Site values(99, 'restaurant', '200 Water Park', '5053336435');
+
+
+ insert into DigitalDisplay values('345', 'Smart','abc');
+ insert into DigitalDisplay values('456', 'Random','bcd');
+ insert into DigitalDisplay values(231, 'Virtue', 'cde');
+
+
+ insert into Client values(76, 'Brian', '0978675453', '130 Orange Park');
+ insert into Client values(78, 'Ryan', '0978698753', '138 Orange Park');
+ insert into Client values(80, 'Tim', '5756547658', '140 Yellow Park');
+
+ insert into TechnicalSupport values(123, 'Bob', 'M');
+ insert into TechnicalSupport values(786, 'Bryan', 'F');
+ insert into TechnicalSupport values(987, 'Kelly', 'M');
+
+
+ insert into Administrator values(098, 'Howard', 'F');
+ insert into Administrator values(097, 'Doncic', 'M');
+insert into Administrator values(99, 'Keller', 'M');
+
+
+ insert into Salesman values(7654, 'Kobe', 'M');
+ insert into Salesman values(0001, 'Jorden', 'M');
+ insert into Salesman values (10, 'Rob', 'M');
+
+ 
+ insert into AirtimePackage values(7654, 'economy', '2022-07-07', '2022-07-12', 10, 20);
+ insert into AirtimePackage values(0001, 'whole day', '2022-05-07', '2022-05-22', 20, 30);
+ insert into AirtimePackage values(1001, 'golden hours', '2021-01-20', '2021-02-01', 30, 40); 
+
+
+ insert into AdmWorkHours values(97, '2022-09-08', 05.25);
+ insert into AdmWorkHours values(98, '2022-09-08', 12.00);
+ insert into AdmWorkHours values(99, '2021-03-22', 12.00);
+
+
+ insert into Broadcasts values(12, 34);
+ insert into Broadcasts values(45, 89);
+ insert into Broadcasts values(65, 99);
+
+
+ insert into Administers values(97, 34);
+ insert into Administers values(98, 89);
+ insert into Administers values(99, 99);
+
+
+ insert into Specializes values(123, 'abc');
+ insert into Specializes values(786, 'bcd');
+ insert into Specializes values(987, 'cde');
+
+
+ insert into Purchases values(76, 1, 1, 43.21);
+ insert into Purchases values(78, 10, 1001, 10.01);
+ insert into Purchases values(80, 7654, 7654, 98.76);
+
+
+ insert into Locates values(231, 34);
+ insert into Locates values('345', 89);
+ insert into Locates values('456', 99);
