@@ -1,0 +1,56 @@
+Concurrency is becoming a very important programming concept due to the explosion of multi-threaded, multi-core processors.   You are to write a simple concurrent program in JAVA.    You will create a square two dimensional matrix and calculate some basic statistics while measuring the time.    Click HERE to see a way to measure time in JAVA. . You may want to use the INTERNET to see how you create threads in JAVA. The specifications are as follows
+
+ 
+
+(here is some starter code for you fill in)Download (here is some starter code for you fill in)
+
+The program takes1 input from the user (or on command line)
+1)  the dimension of the matrix- N
+
+ 
+
+Your program will do the following
+1)  Create an NxN two dimension INTEGER matrix
+2)  randomly assign INTEGER values to each element in the range of  between 2^(32-N) and 2^(31-N).  The best way to do this is to do the following   (assuming random() is in the range [0,1). )
+             trunc(  (2^(32-N) - (2^31-N))* Random()   + 2^(31-N))
+
+      This is basically :    range * Random() + start_value
+
+ 
+
+START TIMER NOW
+3)  You will create N threads, each thread is responsible for one row of the matrix
+4)  each thread will calculate the max, min and what it needs to report for summation/average
+5)  You should add a common set of arrays in the main object class to allow each thread to copy values back to the main thread.
+
+6)  Your main thread will wait on all of the children threads, and then calculate the overall max, Min and average
+
+ 
+
+STOP TIMER
+
+You will need to calculate  and report the following from the matrix
+a)  The maximum value
+b)  The minimum value
+c)  The average of all of the values in the matrix
+d)  the time it took to do parts a-c
+
+You may ONLY use INT and FLOAT for your calculation of MAX, SUM and average  You MAY ONLY use DOUBLE/LONG for time values.   If you use larger primitives to solve sum and average you will see 50% off for any use of these primitive data types.
+
+Ensure your results look valid.  In particular the average.
+
+You are then to do a time series analysis of your program by doing the following
+
+Run your program for N ={2,4,8,16 }.
+
+You are to run each series at LEAST 5 times to measure runtime. Your runtime needs to report average time run, and standard deviation.  Standard deviation is on each time series and NOT the entire experiment.
+
+You are to LINE plot the average time against the size of the data.  You are to calculate the standard deviation on the run times appropriately.
+
+You are to write a report that discusses your data plot.
+Deliverables:
+
+1)  PDF with appropriate graphs
+2)  Your CODE (well documented describing how you broke up the code and collected the results)
+3) The output of your code
+
